@@ -1,0 +1,14 @@
+{
+  "name": "simple",
+  "version": "0.0.1",
+  "description": "A simple ghost theme.",
+  "author": "Faiz Mokhtar",
+  "devDependencies": {
+    "browser-sync": "latest",
+    "gulp": "^3.9.0",
+    "gulp-minify-css": "latest",
+    "gulp-plumber": "latest",
+    "gulp-rename": "latest",
+    "gulp-sass": "latest"
+  }
+}
