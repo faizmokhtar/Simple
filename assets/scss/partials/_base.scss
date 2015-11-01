@@ -1,0 +1,60 @@
+html {
+  font-size: $base-font-size;
+}
+
+body {
+  font-family: $base-font-family;
+  font-size: 1rem;
+  line-height: $base-line-height;
+  color: $color-base;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on;
+}
+
+img {
+  @include img-responsive;
+}
+
+a {
+    color: $color-primary;
+    text-decoration: none;
+}
+
+.main-header {
+    .title {
+        font-size: 2rem;
+    }
+    .description {
+        font-family: $base-font-family;
+        font-weight: normal;
+        font-size: 1rem;
+    }
+}
+
+.post {
+  padding: 1.5rem 0;
+
+  .title {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+
+    a {
+      text-decoration: none;
+      color: $color-base;
+      transition: color 0.3s ease;
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+
+  .meta {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: $semi-bold;
+  }
+
+}
