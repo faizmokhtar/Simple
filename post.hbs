@@ -1,0 +1,94 @@
+{{!< default}}
+
+
+
+{{#post}}
+<article class="{{post_class}}">
+
+</article>
+<div class="container">
+  <header class="post-header">
+    <h1 class="title">{{title}}</h1>
+    <section class="meta">
+      <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">
+        {{date format="DD MMMM YYYY"}} {{tags prefix=" on "}}
+      </time>
+    </section>
+  </header>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="post-content">
+        {{content}}
+      </div>
+      <hr>
+    </div>
+  </div>
+
+  {{#author}}
+  <div class="row">
+    <div class="col-md-5">
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="http://placehold.it/600x600" alt="" class="img-responsive img-circle"/>
+        </div>
+        <div class="col-sm-8">
+          <h5>{{name}}</h5>
+          <p>{{location}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-7">
+      <p>
+        {{bio}}
+      </p>
+    </div>
+  </div>
+  {{/author}}
+
+</div>
+
+<section class="read-next">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        {{#next_post}}
+        <a href="{{url}}">
+          <div class="panel panel-default">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="http://placehold.it/600x600" alt="" class="img-responsive"/>
+              </div>
+              <div class="col-md-8">
+                <h2>{{title}}</h2>
+                <p>
+                  {{excerpt words="20"}}
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+        {{/next_post}}
+
+        {{#prev_post}}
+        <a href="{{url}}">
+          <div class="panel panel-default">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="http://placehold.it/600x600" alt="" class="img-responsive"/>
+              </div>
+              <div class="col-md-8">
+                <h2>{{title}}</h2>
+                <p>
+                  {{excerpt words="20"}}
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+        {{/prev_post}}
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/post}}

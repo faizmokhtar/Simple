@@ -1,0 +1,20 @@
+
+
+{{#foreach posts}}
+
+<section class="{{post_class}}">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="meta">
+        <time class="date" datetime="{{date format="YYYY-MM-DD"}}">
+          {{date published_at timeago="true"}}
+        </time>
+         {{tags prefix=" on "}}
+      </div>
+      <h2 class="title"><a href="{{url}}">{{{title}}}</a></h2>
+      <p class="">{{excerpt words="32"}} ...</p>
+    </div>
+  </div>
+</section>
+
+{{/foreach}}
