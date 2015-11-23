@@ -10,5 +10,3 @@ sandbox
 test/out-fixtures/*
 test/watch-*.txt
 gulp.1
-
-assets/css/*
