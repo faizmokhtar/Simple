@@ -1,11 +1,19 @@
 {{!< default}}
 
+<div class="container-fluid">
+  <div class="post-navigation">
+    <div class="row">
+      <div class="col-md-12">
+        <a href="{{@blog.url}}">
+          <i class="fa fa-arrow-left fa-fw"></i>Back
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 {{#post}}
-<article class="{{post_class}}">
-
-</article>
 <div class="container">
   <header class="post-header">
     <h1 class="title">{{title}}</h1>
@@ -20,27 +28,47 @@
       <div class="post-content">
         {{content}}
       </div>
+      <section class="social">
+        <a href="#">
+          <i class="fa fa-1x fa-facebook fa-fw"></i>
+        </a>
+        <a href="#">
+          <i class="fa fa-1x fa-twitter fa-fw"></i>
+        </a>
+        <a href="#">
+          <i class="fa fa-1x fa-google-plus fa-fw"></i>
+        </a>
+        <a href="#">
+          <i class="fa fa-1x fa-reddit fa-fw"></i>
+        </a>
+        <a href="#">
+          <i class="fa fa-1x fa-yc fa-fw"></i>
+        </a>
+      </section>
       <hr>
     </div>
   </div>
 
   {{#author}}
-  <div class="row">
-    <div class="col-md-5">
-      <div class="row">
-        <div class="col-sm-4">
-          <img src="http://placehold.it/600x600" alt="" class="img-responsive img-circle"/>
-        </div>
-        <div class="col-sm-8">
-          <h5>{{name}}</h5>
-          <p>{{location}}</p>
-        </div>
+  <div class="post-author">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+
       </div>
     </div>
-    <div class="col-md-7">
-      <p>
-        {{bio}}
-      </p>
+    <div class="row">
+      <div class="col-md-3">
+        <img src="{{image}}" alt="" class="img-responsive img-circle image"/>
+      </div>
+      <div class="col-md-9">
+        <h5 class="name">{{name}}</h5>
+        <p class="bio">
+          {{bio}}
+        </p>
+        <p class="meta">
+          {{#if location}}<i class="fa fa-map-marker"></i>{{location}}{{/if}}
+          {{#if website}}<i class="fa fa-globe"></i><a href="#">{{website}}</a>{{/if}}
+      </div>
     </div>
   </div>
   {{/author}}
@@ -51,17 +79,19 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
+
+        <h6 class="next-title">YOU MIGHT ENJOY THESE STORIES NEXT</h6>
+
         {{#next_post}}
         <a href="{{url}}">
-          <div class="panel panel-default">
+          <div class="panel">
             <div class="row">
-              <div class="col-md-4">
-                <img src="http://placehold.it/600x600" alt="" class="img-responsive"/>
+              <div class="col-md-4 img-container" style="background-image: url({{image}}); background-size:cover">
               </div>
               <div class="col-md-8">
-                <h2>{{title}}</h2>
-                <p>
-                  {{excerpt words="20"}}
+                <h2 class="title">{{title}}</h2>
+                <p class="excerpt">
+                  {{excerpt characters="120"}} ...
                 </p>
               </div>
             </div>
@@ -71,15 +101,14 @@
 
         {{#prev_post}}
         <a href="{{url}}">
-          <div class="panel panel-default">
+          <div class="panel">
             <div class="row">
-              <div class="col-md-4">
-                <img src="http://placehold.it/600x600" alt="" class="img-responsive"/>
+              <div class="col-md-4 img-container" style="background-image: url({{image}}); background-size:cover">
               </div>
               <div class="col-md-8">
-                <h2>{{title}}</h2>
-                <p>
-                  {{excerpt words="20"}}
+                <h2 class="title">{{title}}</h2>
+                <p class="excerpt">
+                  {{excerpt characters="120"}} ...
                 </p>
               </div>
             </div>

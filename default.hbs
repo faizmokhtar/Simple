@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>{{meta_title}}</title>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="{{asset "css/main.min.css"}}" />
 
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
   </head>
   <body>
+    <div class="ribbon-top"></div>
 
     {{{body}}}
 
+    {{> "footer"}}
     {{! Ghost outputs important scripts and data with this tag }}
     {{ghost_foot}}
   </body>
