@@ -1,0 +1,42 @@
+.post {
+    padding: 1.5rem 0;
+
+    .title {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+
+        a {
+            text-decoration: none;
+            color: $color-primary;
+            transition: color 0.3s ease;
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }
+
+    .meta {
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        font-weight: $semi-bold;
+        letter-spacing: 1.5px;
+        margin-bottom: 0.4rem;
+    }
+
+    .btn-more {
+        font-weight: bold;
+        border-color: $color-primary-light;
+        border-width: 2px;
+        color: $color-primary;
+        transition: color 0.3s ease;
+        &:hover {
+            border-color: $color-primary-dark;
+            background-color: $color-primary-dark;
+            color: $color-white;
+        }
+    }
+
+}

@@ -9,9 +9,12 @@ $base-font-weight: $regular;
 $base-font-size: 21px;
 $base-line-height: 1.58;
 
-$heading-font-family: 'Montserrat', sans-serif;
+$heading-font-family: 'Roboto', sans-serif;
 $heading-font-weight: $semi-bold;
 
-// Colours
 $color-base: #21272d;
-$color-primary: #2ecc71;
+$color-primary: #34495e;
+$color-primary-light: lighten($color-primary, 30%);
+$color-primary-dark: darken($color-primary, 10%);
+$color-white: #fffff1;
+$color-heart: #e74c3c;

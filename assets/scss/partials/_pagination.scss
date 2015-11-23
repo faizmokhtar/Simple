@@ -1,0 +1,25 @@
+nav[role="navigation"] {
+  	text-align: center;
+}
+
+.pagination {
+	margin-top: 3rem;
+	margin-bottom: 7rem;
+	text-align: center;
+	font-size: 0.8rem;
+
+	.page-number {
+		font-weight: 400;
+		vertical-align: middle;
+	}
+
+	a {
+		text-transform: uppercase;
+		text-decoration: underline;
+		font-weight: 600;
+
+		&:active {
+			transform: scale(0.9);
+		}
+	}
+}

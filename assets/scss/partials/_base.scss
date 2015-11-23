@@ -1,20 +1,20 @@
 html {
-  font-size: $base-font-size;
+    font-size: $base-font-size;
 }
 
 body {
-  font-family: $base-font-family;
-  font-size: 1rem;
-  line-height: $base-line-height;
-  color: $color-base;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -moz-font-feature-settings: "liga" on;
+    font-family: $base-font-family;
+    font-size: 1rem;
+    line-height: $base-line-height;
+    color: $color-base;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-feature-settings: "liga" on;
 }
 
 img {
-  @include img-responsive;
+    @include img-responsive;
 }
 
 a {
@@ -22,39 +22,35 @@ a {
     text-decoration: none;
 }
 
+::selection {
+    background: $color-primary;
+    color: $color-white;
+}
+::-moz-selection {
+    background: $color-primary;
+    color: $color-white;
+}
+
+.ribbon-top {
+    position: absolute;
+    left: 0;
+    right: 0;
+    transition: 0.3s;
+    height: 10px;
+    z-index: 5;
+    background: $color-primary;
+}
+
 .main-header {
     .title {
-        font-size: 2rem;
+        letter-spacing: 2px;
+        font-size: 3rem;
+        margin-top: 3rem;
+        margin-bottom: 1rem
     }
     .description {
         font-family: $base-font-family;
-        font-weight: normal;
+        font-weight: $regular;
         font-size: 1rem;
     }
-}
-
-.post {
-  padding: 1.5rem 0;
-
-  .title {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    font-size: 1.5rem;
-
-    a {
-      text-decoration: none;
-      color: $color-base;
-      transition: color 0.3s ease;
-      &:hover {
-        color: $color-primary;
-      }
-    }
-  }
-
-  .meta {
-    text-transform: uppercase;
-    font-size: 0.7rem;
-    font-weight: $semi-bold;
-  }
-
 }
