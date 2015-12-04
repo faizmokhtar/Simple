@@ -1,17 +1,17 @@
 .footer {
     padding: 0.4rem;
-    background-color: $color-primary-dark;
-    color: $color-primary-light;
+    background-color: $color-footer;
+    color: $color-base;
     p {
         font-family: $base-font-family;
-        text-align: left;
+        text-align: center;
         font-size: 0.7rem;
         line-height: 1rem;
         font-weight: $regular;
         margin: 0;
         a {
             font-weight: 600;
-            color: $color-white;
+            color: $color-base;
         }
         .heart {
             color: $color-heart;
