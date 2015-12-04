@@ -1,6 +1,7 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: $heading-font-family;
     font-weight: $heading-font-weight;
+    color: $color-heading;
 }
 
 h1 {
@@ -34,5 +35,8 @@ h6 {
 
 p {
     letter-spacing: -0.003em;
-    line-height: 1.65rem;
+}
+
+strong {
+    font-weight: $bold;
 }

@@ -1,6 +1,5 @@
 .post-navigation {
     padding-top: 4rem;
-    margin-left: 4rem;
 
     a {
         text-transform: uppercase;
@@ -21,12 +20,13 @@
 
     .title {
         font-size: 2.4rem;
+        font-weight: $bold;
         text-transform: uppercase;
         letter-spacing: 1.5px;
     }
     .meta {
         font-size: 0.8rem;
-        font-weight: $semi-bold;
+        font-weight: $medium;
         text-transform: uppercase;
     }
 }
@@ -34,6 +34,14 @@
 .post-content {
     a {
         color: $color-primary;
+        font-weight: $medium;
+        text-decoration: underline;
+        background: transparent;
+        transition: background-color 0.3s, border-color 0.3s;
+        &:hover {
+            color: $color-primary-dark;
+            background-color: $color-primary-light;
+        }
     }
 }
 
@@ -97,23 +105,22 @@
 }
 
 .read-next {
-    background-color: $color-primary;
+    background-color: $color-footer;
     padding: 2rem 0;
     margin-top: 4rem;
 
     .next-title {
-        color: $color-white;
         padding-bottom: 0.6rem;
         margin-bottom: 2rem;
-        border-bottom: 2px solid $color-primary-dark;
-        font-size: 0.7rem;
+        border-bottom: 2px solid $color-primary-light;
+        font-size: 1rem;
         font-weight: $bold;
     }
 
     .panel {
-        border: 2px solid $color-primary-dark;
-        overflow: hidden;
+        border: 2px solid $color-primary-light;
 
+        overflow: hidden;
         .img-container {
             height: 200px;
             width: 200px;

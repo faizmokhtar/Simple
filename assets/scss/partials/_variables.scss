@@ -1,19 +1,21 @@
 // Weights
 $light: 300;
 $regular: 400;
-$semi-bold: 600;
+$medium: 500;
 $bold: 700;
 
-$base-font-family: 'Source Sans Pro', sans-serif;
+$base-font-family: 'Roboto', sans-serif;
 $base-font-weight: $regular;
-$base-font-size: 21px;
+$base-font-size: 20px;
 $base-line-height: 1.58;
 
 $heading-font-family: 'Roboto', sans-serif;
-$heading-font-weight: $semi-bold;
+$heading-font-weight: $medium;
 
-$color-base: #21272d;
-$color-primary: #34495e;
+$color-base: #5C6E74;
+$color-primary: #4275F4;
+$color-heading: #163541;
+$color-footer: #fafafa;
 $color-primary-light: lighten($color-primary, 30%);
 $color-primary-dark: darken($color-primary, 10%);
 $color-white: #fffff1;

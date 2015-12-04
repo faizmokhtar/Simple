@@ -15,8 +15,7 @@ nav[role="navigation"] {
 
 	a {
 		text-transform: uppercase;
-		text-decoration: underline;
-		font-weight: 600;
+		font-weight: $medium;
 
 		&:active {
 			transform: scale(0.9);

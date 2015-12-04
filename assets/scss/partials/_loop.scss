@@ -5,12 +5,13 @@
         margin-top: 0;
         margin-bottom: 0.5rem;
         font-size: 1.5rem;
+        font-weight: $bold;
         text-transform: uppercase;
         letter-spacing: 1.5px;
 
         a {
             text-decoration: none;
-            color: $color-primary;
+            color: $color-heading;
             transition: color 0.3s ease;
             &:hover {
                 color: $color-primary;
@@ -21,13 +22,13 @@
     .meta {
         text-transform: uppercase;
         font-size: 0.7rem;
-        font-weight: $semi-bold;
+        font-weight: $medium;
         letter-spacing: 1.5px;
         margin-bottom: 0.4rem;
     }
 
     .btn-more {
-        font-weight: bold;
+        font-weight: $medium;
         border-color: $color-primary-light;
         border-width: 2px;
         color: $color-primary;
