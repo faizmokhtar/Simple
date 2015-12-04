@@ -31,22 +31,20 @@ a {
     color: $color-white;
 }
 
-.ribbon-top {
-    position: absolute;
-    left: 0;
-    right: 0;
-    transition: 0.3s;
-    height: 10px;
-    z-index: 5;
-    background: $color-primary;
-}
-
 .main-header {
     .title {
-        letter-spacing: 2px;
-        font-size: 3rem;
+        letter-spacing: 1px;
+        font-size: 2.2rem;
+        font-weight: $bold;
         margin-top: 3rem;
-        margin-bottom: 1rem
+        margin-bottom: 1rem;
+
+        a {
+            color: $color-heading;
+            &:hover {
+                text-decoration: none;
+            }
+        }
     }
     .description {
         font-family: $base-font-family;
