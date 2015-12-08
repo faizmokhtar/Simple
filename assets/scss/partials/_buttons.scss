@@ -1,0 +1,13 @@
+.btn-basic {
+    font-weight: $medium;
+    border-color: $color-primary-light;
+    border-width: 2px;
+    padding: 8px 10px;
+    color: $color-primary;
+    transition: color 0.3s ease;
+    &:hover, &:active {
+        border-color: $color-primary-dark;
+        background-color: $color-primary-dark;
+        color: $color-white;
+    }
+}
