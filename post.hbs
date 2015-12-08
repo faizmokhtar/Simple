@@ -4,8 +4,8 @@
   <div class="post-navigation">
     <div class="row">
       <div class="col-md-12">
-        <a href="{{@blog.url}}">
-          <i class="fa fa-arrow-left fa-fw"></i>Back
+        <a class="btn btn-basic" href="{{@blog.url}}">
+          <i class="fa fa-bars fa-1x fa-fw"></i> HOME
         </a>
       </div>
     </div>
@@ -28,21 +28,19 @@
       <div class="post-content">
         {{content}}
       </div>
+
       <section class="social">
-        <a href="#">
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+            onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
           <i class="fa fa-1x fa-facebook fa-fw"></i>
         </a>
-        <a href="#">
+        <a href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}"
+          onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
           <i class="fa fa-1x fa-twitter fa-fw"></i>
         </a>
-        <a href="#">
+        <a href="https://plus.google.com/share?url={{url absolute="true"}}"
+          onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
           <i class="fa fa-1x fa-google-plus fa-fw"></i>
-        </a>
-        <a href="#">
-          <i class="fa fa-1x fa-reddit fa-fw"></i>
-        </a>
-        <a href="#">
-          <i class="fa fa-1x fa-yc fa-fw"></i>
         </a>
       </section>
       <hr>
