@@ -15,14 +15,18 @@
 
 {{#post}}
 <div class="container">
-  <header class="post-header">
-    <h1 class="title">{{title}}</h1>
-    <section class="meta">
-      <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">
-        {{date format="DD MMMM YYYY"}} {{tags prefix=" on "}}
-      </time>
-    </section>
-  </header>
+  <div class="row">
+    <div class="col-md-12">
+      <header class="post-header">
+        <h1 class="title">{{title}}</h1>
+        <section class="meta">
+          <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">
+            {{date format="DD MMMM YYYY"}} {{tags prefix=" on "}}
+          </time>
+        </section>
+      </header>
+    </div>
+  </div>
   <div class="row">
     <div class="col-md-12">
       <div class="post-content">
@@ -55,10 +59,10 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-sm-3 hidden-xs">
         <img src="{{image}}" alt="" class="img-responsive img-circle image"/>
       </div>
-      <div class="col-md-9">
+      <div class="col-sm-9">
         <h5 class="name">{{name}}</h5>
         <p class="bio">
           {{bio}}
