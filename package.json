@@ -1,6 +1,6 @@
 {
-  "name": "simple",
-  "version": "0.0.1",
+  "name": "Simple",
+  "version": "0.2.1",
   "description": "A simple ghost theme.",
   "author": "Faiz Mokhtar",
   "devDependencies": {
