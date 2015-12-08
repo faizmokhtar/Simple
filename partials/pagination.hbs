@@ -1,16 +1,16 @@
 <nav class="pagination" role="navigation">
   <div class="row">
-    <div class="col-lg-4">
+    <div class="col-sm-4">
       {{#if prev}}
-        <a class="pull-left" href="{{page_url prev}}"><i class="fa fa-arrow-left fa-fw"></i> Newer Posts</a>
+        <a class="pull-left btn btn-basic" href="{{page_url prev}}"><i class="fa fa-arrow-left fa-fw"></i> Newer Posts</a>
       {{/if}}
     </div>
-    <div class="col-lg-4 text-center">
+    <div class="col-sm-4 hidden-xs text-center">
       <span class="page-number">Page {{page}} of {{pages}}</span>
     </div>
-    <div class="col-lg-4">
+    <div class="col-sm-4">
       {{#if next}}
-        <a class="pull-right" href="{{page_url next}}">Older Posts <i class="fa fa-arrow-right fa-fw"></i></a>
+        <a class="pull-right btn btn-basic" href="{{page_url next}}">Older Posts <i class="fa fa-arrow-right fa-fw"></i></a>
       {{/if}}
     </div>
   </div>
